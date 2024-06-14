@@ -46,3 +46,10 @@ BALENA_CONFIGS[pieeprom] = " \
     CONFIG_SPI_BCM2835=y \
     CONFIG_SPI_SPIDEV=y \
 "
+
+# requested by customer in issue number 453
+RESIN_CONFIGS_append = " rpivid"
+
+RESIN_CONFIGS[rpivid] = " \
+    CONFIG_RPIVID_MEM=m \
+"
